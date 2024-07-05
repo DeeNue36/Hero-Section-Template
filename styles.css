@@ -1,5 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --primary-color-white: hsl(0, 0%, 98%);
+    --primary-color-grey: (0, 0%, 41%);
+    --primary-color-black: hsl(0, 0%, 8%);
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    font-family: "Epilogue", sans-serif;
+}
+
+.navbar{
+    display: flex;
+    padding: 25px;
+}
+
+.nav-links ul{
+    display: flex;
+}
+
+.nav-links ul li{
+    list-style: none;
+    padding: 0px 20px;
+}
+
+.nav-links ul li a{
+    text-decoration: none;
 }
