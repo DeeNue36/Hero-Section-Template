@@ -71,5 +71,63 @@ body{
     font-family: "Epilogue", sans-serif;
     font-size: 14px;
     border-radius: 14px;
-    padding: 10px 15px;
+    padding: 10px 20px;
+}
+
+.hero-section{
+    padding: 50px 80px 0px 100px;
+}
+
+.hero-container{
+    display: flex;
+    align-items: center;
+}
+
+.hero-content{
+    padding: 50px 90px 50px 0px;
+}
+
+.hero-title{
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.hero-subtitle{
+    padding: 60px 0px;
+    font-size: 18px;
+}
+
+.hero-button{
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-family: "Epilogue", sans-serif;
+    background-color: var(--primary-color-black);
+    color: var(--primary-color-white);
+    cursor: pointer;
+}
+
+.hero-button:hover{
+    background-color: transparent;
+    color: var(--primary-color-black);
+    border: 1px solid var(--primary-color-black);
+}
+
+.clients{
+    display: flex;
+    margin-top: 100px;
+}
+
+.clients img{
+    align-self: center;
+    padding-right: 25px;
+}
+
+.clients img:nth-child(2){
+    width: 96px;
+}
+
+.hero-image-desktop{
+    width: 480px;
 }
