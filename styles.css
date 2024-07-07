@@ -53,8 +53,8 @@ body{
 .features:hover{
     .features-dropdown{
         display: block;
-        margin-top: 15px;
-        left: 80px;
+        margin-top: 10px;
+        left: 120px;
     }
     .arrow-down{
         display: none;
@@ -108,7 +108,7 @@ body{
 .company:hover{
     .company-dropdown{
         display: block;
-        margin-top: 15px;
+        margin-top: 10px;
     }
     .arrow-down{
         display: none;
@@ -264,6 +264,12 @@ body{
     } 
 }
 
+@media screen and (max-width: 1040px){
+    .nav-links{
+    padding-right: 20%;
+    }
+}
+
 @media screen and (max-width: 1032px){
     .hero-section{
         padding: 50px 40px 0px 40px;
@@ -289,6 +295,9 @@ body{
 }
 
 @media screen and (max-width: 922px){
+    .nav-links{
+        padding-right: 12%;
+    }
     .hero-content{
         padding: 50px 10px 0px 0px;
     }
@@ -301,6 +310,9 @@ body{
 }
 
 @media screen and (max-width: 903px){
+    .nav-links{
+        padding-right: 0;
+    }
     .hero-container{
         flex-direction: column-reverse;
     }
