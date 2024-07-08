@@ -11,23 +11,9 @@
 // When the user clicks on the button, toggle between hiding and showing the dropdown content //
 
 function openMenu() {
-    document.getElementById("navcontainer-mobile").classList.toggle("show");
+    document.getElementById("navcontainer-mobile").classList.add("show");
 }
 
 function closeMenu() {
-    document.getElementById("navcontainer-mobile").classList.toggle("show");
+    document.getElementById("navcontainer-mobile").classList.remove("show");
 }
-  
-// Close the dropdown menu if the user clicks outside of it
-// window.onclick = function(event) {
-//     if(!event.target.matches('.icon-menu-close')) {
-//       let navbar = document.getElementsByClassName("navbar");
-//       let i;
-//       for (i = 0; i < navbar.length; i++) {
-//         let openNavbar = navbar[i];
-//         if (openNavbar.classList.contains('show')) {
-//           openNavbar.classList.remove('show');
-//         }
-//       }
-//     }
-// }
