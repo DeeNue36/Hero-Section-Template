@@ -18,9 +18,17 @@
             <img src="images/logo.svg" class="Logo-img" alt="Logo">
         </a>
 
-        <header class="navbar">
+        <header class="navbar" id="navcontainer-mobile">
+
+            <!-- Close Icon -->
+            <a href="javascript:void(0)" 
+                class="icon-menu-close" 
+                id="menu-close"
+                onclick="closeMenu()" 
+                alt="menu_close"> &times;
+            </a>
             
-            <nav class="nav-links">
+            <nav class="nav-links" id="navlinks-mobile">
 
                 <!-- Features nav link with dropdowns -->
                 <div class="features">
@@ -61,7 +69,7 @@
                                 <p>Reminders</p>
                             </a>
 
-                            <a href="planning">
+                            <a href="#planning">
                                 <img src="images/icon-planning.svg" 
                                     alt="planning icon"
                                 >
@@ -115,7 +123,7 @@
                 
             </nav>
 
-            <div class="register-btns">
+            <div class="register-btns" id="navbuttons-mobile">
                 <button class="login">
                     Login
                 </button>
@@ -128,8 +136,11 @@
 
         </header>
 
-        <div class="mobile-menu" onclick="openNav()">
-            <img src="images/icon-menu.svg" alt="menu">
+        <div class="mobile-menu">
+            <img src="images/icon-menu.svg" 
+                onclick="openMenu()"
+                alt="menu"
+            >
         </div>
     </section>
 
@@ -137,13 +148,16 @@
 
         <div class="hero-container">
             <div class="hero-content">
+
                 <h1 class="hero-title">
-                    Make<br>Remote Work
+                    Make Remote Work
                 </h1>
+
                 <p class="hero-subtitle">
                     Get your team in sync, no matter your location.<br> 
                     Streamline processes, create team rituals, and watch productivity soar.
                 </p>
+
                 <button class="hero-button">
                     Learn More
                 </button>
@@ -153,17 +167,21 @@
                     <img src="images/client-databiz.svg" 
                         alt="Databiz"
                     >
+
                     <img src="images/client-audiophile.svg" 
                         alt="Audiophile"
                     >
+
                     <img src="images/client-meet.svg" 
                         alt="Meet"
                     >
+
                     <img src="images/client-maker.svg" 
                         alt="Maker"
                     >
 
                 </div>
+
             </div>
 
             <div class="hero-image">
@@ -171,8 +189,15 @@
                     class="hero-image-desktop" 
                     alt="hero-desktop"
                 >
+
+                <img src="images/image-hero-mobile.png" 
+                    class="hero-image-mobile" 
+                    alt="hero-mobile"
+                >
             </div>
         </div>
     </section>
+
+    <script src="intro.js"></script>
 </body>
 </html>
