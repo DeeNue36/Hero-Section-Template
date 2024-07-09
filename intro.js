@@ -1,19 +1,21 @@
-// function openMenu() {
-//     document.getElementById("navcontainer-mobile").style.width = "80%";
-//     document.getElementById("navcontainer-mobile").style.boxShadow = "-20px 20px 400px 200px rgba(0, 0, 0, 0.6)";
-// }
-  
-// function closeMenu() {
-//     document.getElementById("navcontainer-mobile").style.width = "";
-//     document.getElementById("navcontainer-mobile").style.boxShadow = "";
-// }
+function openMenu() {
+    document.getElementById("navcontainer-mobile").style.width = "80vw";
+    document.getElementById("navcontainer-mobile").classList.add("box-shadow");
+}
 
+  
+function closeMenu() {
+    document.getElementById("navcontainer-mobile").style.width = "";
+    document.getElementById("navcontainer-mobile").classList.remove("box-shadow");
+}
+ 
+//Alternative menu style
 // When the user clicks on the button, toggle between hiding and showing the dropdown content //
 
-function openMenu() {
-    document.getElementById("navcontainer-mobile").classList.add("show");
-}
+// function openMenu() {
+//     document.getElementById("navcontainer-mobile").classList.add("show");
+// }
 
-function closeMenu() {
-    document.getElementById("navcontainer-mobile").classList.remove("show");
-}
+// function closeMenu() {
+//     document.getElementById("navcontainer-mobile").classList.remove("show");
+// }

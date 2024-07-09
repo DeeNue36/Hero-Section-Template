@@ -17,19 +17,28 @@ body{
 }
 
 /* Navbar styling */
+.navbar-container{
+    display: flex;
+    padding: 25px;
+}
+
 .navbar{
     display: flex;
     justify-content: space-between;
-    padding: 25px;
+    width: 100vw;
 }
 
 .Logo{
     align-content: end;
+    padding-right: 40px;
+}
+
+#menu-close{
+    display: none;
 }
 
 .nav-links{
     display: flex;
-    padding-right: 30%;
 }
 
 /* Arrow styling */
@@ -44,17 +53,23 @@ body{
 
 /* features nav-links & dropdown styling */
 .features{
-    cursor: pointer;
     font-size: 15px;
     padding-right: 25px;
     align-content: center;
+}
+
+.features a,
+.features img,
+.company a,
+.company img{
+    cursor: pointer;
 }
 
 .features:hover{
     .features-dropdown{
         display: block;
         margin-top: 10px;
-        left: 120px;
+        left: 80px;
     }
     .arrow-down{
         display: none;
@@ -99,7 +114,6 @@ body{
 
 /* Company nav-links & dropdown styling */
 .company{
-    cursor: pointer;
     padding-right: 20px;
     font-size: 15px;
     align-content: center;
@@ -151,6 +165,7 @@ body{
 .nav-links ul{
     display: flex;
     align-items: center;
+    /* margin-right: 360px; */
 }
 
 .nav-links ul li{
@@ -162,10 +177,6 @@ body{
     text-decoration: none;
     color: var(--primary-color-black);
     font-size: 15px;
-}
-
-.register-btns{
-    padding: 0px 15px;
 }
 
 /* Registration buttons */
@@ -190,6 +201,12 @@ body{
     font-size: 14px;
     border-radius: 14px;
     padding: 10px 20px;
+}
+
+.mobile-menu {
+    align-content: center;
+    cursor: pointer;
+    display: none;
 }
 
 /* Hero section styling */
@@ -343,5 +360,88 @@ body{
     }
     .login{
         margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 738px){
+    .navbar-container{
+        justify-content: space-between;
+    }
+    .navbar{
+        display: none;
+    }
+    .mobile-menu{
+        display: block;
+    }
+    #menu-close{
+        /* HTML 'x' icon */
+        /* margin-left: 85%;
+        height: 12%;
+        text-decoration: none;
+        font-size: 64px;
+        color: #000; */
+        display: block;
+        /* Close Icon svg */
+        background-image: url('images/icon-close-menu.svg');
+        background-repeat: no-repeat;
+        background-position: top right;
+        height: 30px;
+        width: 30px;
+        margin-left: 90%;
+        margin-top: 5%;
+    }
+    /* Alternative menu style to be toggled with JS - 
+    commented out because adding a smooth transition was not possible at the time 
+    to use this comment out "display:block" and "width:0" in #navcontainer-mobile
+    */
+    /* .show{
+        display: block;
+        width: 80%;
+        box-shadow: -20px 20px 400px 200px rgba(0, 0, 0, 0.6);
+    } */
+    .box-shadow{
+        box-shadow: -20px 20px 400px 200px rgba(0, 0, 0, 0.6);
+    }
+    #navcontainer-mobile{
+        display: block;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        right: 0;
+        top: 0;
+        background-color: rgba(255, 255, 255);
+        transition: 0.5s ease-in;
+    }
+    #navlinks-mobile{
+        display: block;
+        padding: 0px 25px;
+        width: 100%;
+        text-align: left;
+    }
+    .features, .company{
+        display: block;
+        margin-top: 60px;
+        width: 150px;
+    }
+    .features:hover, .company:hover{
+        .features-dropdown, 
+        .company-dropdown{
+            margin-top: 5px;
+        }
+    }
+    .nav-links ul{
+        display: block;
+    }
+    .nav-links ul li{
+        padding: 60px 0px 0px;
+    }
+    .register-btns{
+        display: flex;
+        flex-direction: column;
+        padding: 60px;
+    }
+    .login{
+        padding-bottom: 25px;
     }
 }
