@@ -106,6 +106,7 @@ body{
 
 .features-dropdown-links a:hover{
     background-color: #f5f5f5;
+    border-radius: 10px;
 }
 
 .features-dropdown-links p{
@@ -159,13 +160,13 @@ body{
 
 .company-dropdown-links a:hover{
     background-color: #f5f5f5;
+    border-radius: 10px;
 }
 
 /* Nav links without dropdowns */
 .nav-links ul{
     display: flex;
     align-items: center;
-    /* margin-right: 360px; */
 }
 
 .nav-links ul li{
