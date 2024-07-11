@@ -298,7 +298,7 @@ body{
 
 @media screen and (max-width: 1040px){
     .nav-links{
-        padding-right: 20%;
+        /* padding-right: 20%; */
     }
 }
 
