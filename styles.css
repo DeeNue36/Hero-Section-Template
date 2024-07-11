@@ -56,6 +56,8 @@ body{
     font-size: 15px;
     padding-right: 25px;
     align-content: center;
+    justify-items: center;
+    align-self: center;
     cursor: pointer;
 }
 
@@ -119,6 +121,8 @@ body{
     padding-right: 20px;
     font-size: 15px;
     align-content: center;
+    justify-items: center;
+    align-self: center;
     cursor: pointer;
 }
 
@@ -374,6 +378,12 @@ body{
     }
 }
 
+@media screen and (max-width: 768px){
+    .features, .company{
+        padding-right: 15px;
+    }
+}
+
 @media screen and (max-width: 738px){
     .navbar-container{
         justify-content: space-between;
@@ -391,16 +401,25 @@ body{
         text-decoration: none;
         font-size: 64px;
         color: #000; */
+
+        /* General Styles */
         display: block;
-        /* Close Icon svg */
-        background-image: url('images/icon-close-menu.svg');
-        background-repeat: no-repeat;
-        background-position: top right;
         height: 30px;
         width: 30px;
-        margin-left: 90%;
-        margin-top: 5%;
+        position: relative;
+        left: 90%;
+        top: 5%;
+        /* Alternative positioning - 
+        although this makes the menu look like its coming from the top right of the page */
+        /* margin-left: 90%;
+        margin-top: 5%; */
+
+        /* Close Icon svg */
+        /* background-image: url('images/icon-close-menu.svg');
+        background-repeat: no-repeat;
+        background-position: top right; */  
     }
+
     /* Alternative menu style to be toggled with JS - 
     commented out because adding a smooth transition was not possible at the time 
     to use this comment out "display:block" and "width:0" in #navcontainer-mobile
@@ -422,13 +441,11 @@ body{
         right: 0;
         top: 0;
         background-color: rgba(255, 255, 255);
-        transition: 0.5s ease-in;
+        transition: 0.5s ease-in-out;
     }
     #navlinks-mobile{
         display: block;
         padding: 0px 25px;
-        width: 100%;
-        text-align: left;
     }
     .features, .company{
         display: block;
@@ -438,7 +455,10 @@ body{
     .features:hover, .company:hover{
         .features-dropdown, 
         .company-dropdown{
-            margin-top: 5px;
+            margin-top: 3px;
+        }
+        .features-dropdown{
+            left: 40px;
         }
     }
     .nav-links ul{
