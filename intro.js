@@ -1,3 +1,5 @@
+document.addEventListener("touchstart", function(){}, true);
+
 function openMenu() {
     document.getElementById("navcontainer-mobile").style.width = "80vw";
     document.getElementById("navcontainer-mobile").classList.add("box-shadow");
@@ -7,6 +9,10 @@ function openMenu() {
 function closeMenu() {
     document.getElementById("navcontainer-mobile").style.width = "";
     document.getElementById("navcontainer-mobile").classList.remove("box-shadow");
+}
+
+function openDropdown() {
+
 }
  
 //Alternative menu style

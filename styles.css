@@ -65,7 +65,7 @@ body{
     cursor: pointer;
 }
 
-.features:hover{
+.features:hover, .features:active{
     .features-dropdown{
         display: block;
         margin-top: 10px;
@@ -120,7 +120,7 @@ body{
     align-content: center;
 }
 
-.company:hover{
+.company:hover, .company:active{
     .company-dropdown{
         display: block;
         margin-top: 10px;
